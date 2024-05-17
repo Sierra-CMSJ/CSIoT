@@ -12,7 +12,9 @@ byte key256[32];
 byte iv[8] = {0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00};
 
 // Texto plano aleatorio
-const char *plainText = "La criptografía";
+const char *plainText = "APVCMSJ2024IOTTG";
+
+
 
 // Función para imprimir un byte en formato hexadecimal
 void printByteAsHex(byte b) {
@@ -60,23 +62,14 @@ byte* encryptText(const byte *key, const byte *iv, const char *plaintext, size_t
     unsigned long elapsed;
     int count;
 
-    start = micros();
-    for (count = 0; count < 500; ++count) { // Hace 500 asignaciones de claves y vectores de inicio para medir el tiempo como un promedio
-    // Establece la clave y el vector de inicialización
-    chacha.setKey(key, 32);
-    chacha.setIV(iv, chacha.ivSize());
-    }
-    elapsed = micros() - start;
-    Serial.print(elapsed / 500.0); // Tiempo promedio que le tarda asignar las claves y el IV
-    Serial.print("us en asignación de clave e IV, ");
-    Serial.print((500.0 * 1000000.0) / elapsed);
-    Serial.println(" asignaciones por segundo");
-
     // Buffer para el texto encriptado
     byte* ciphertext = new byte[size];
 
     start = micros();
     for (count = 0; count < 500; ++count) { // Cifra el texto 500 veces y con esto se espera obtener varias muestras de tiempo 
+    // Establece la clave y el vector de inicialización
+    chacha.setKey(key, 32);
+    chacha.setIV(iv, chacha.ivSize());
     // Encripta el texto
     chacha.encrypt(ciphertext, (const byte *)plaintext, size);
     }
@@ -100,7 +93,19 @@ byte* encryptText(const byte *key, const byte *iv, const char *plaintext, size_t
 void setup() {
     Serial.begin(115200);
 
-    generateRandomKey(key256, sizeof(key256));
+    unsigned long start;
+    unsigned long elapsed;
+
+    // Medición del tiempo de generación de la clave
+    start = micros();
+    for (int count = 0; count < 500; ++count) {
+        generateRandomKey(key256, sizeof(key256));
+    }
+    elapsed = micros() - start;
+    Serial.print(elapsed / 500.0); // Tiempo promedio que tarda en generar la clave
+    Serial.print("us por clave generada, ");
+    Serial.print((500.0 * 1000000.0) / elapsed);
+    Serial.println(" claves generadas por segundo");
 
     // Tamaño del texto
     size_t size = strlen(plainText);
@@ -119,3 +124,4 @@ void setup() {
 void loop() {
 
 }
+
