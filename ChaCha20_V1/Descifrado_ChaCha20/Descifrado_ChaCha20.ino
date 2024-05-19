@@ -14,23 +14,23 @@ byte iv[8] = {0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00};
 byte cipherText[] = {0XD6, 0X22, 0X77, 0XD8, 0XF4, 0X7B, 0X74, 0XC1, 0XDE, 0X1E, 0X65, 0X0D, 0X8A, 0XE7, 0XE8, 0XF2};// Este texto cifrado será el recibido en la transmisión
 
 
-
-// Función para desencriptar un texto
-void decryptText(const byte *key, const byte *iv, const byte *ciphertext, size_t size) {
+void setup() {
+    Serial.begin(115200);
     unsigned long start;
     unsigned long elapsed;
-    int count;
+
+    size_t size = sizeof(cipherText);
 
     // Buffer para el texto desencriptado
     char* decryptedText = new char[size];
 
     start = micros();
-    for (count = 0; count < 500; ++count) { // Descifra el texto 500 veces y con esto se espera obtener varias muestras de tiempo 
+    for (int count = 0; count < 500; ++count) { // Descifra el texto 500 veces y con esto se espera obtener varias muestras de tiempo 
     // Establece la clave y el vector de inicialización
-    chacha.setKey(key, 32);
+    chacha.setKey(key256, 32);
     chacha.setIV(iv, chacha.ivSize());
     // Desencripta el texto
-    chacha.decrypt((byte *)decryptedText, ciphertext, size);
+    chacha.decrypt((byte *)decryptedText, cipherText, size);
     }
 
     elapsed = micros() - start;
@@ -46,16 +46,6 @@ void decryptText(const byte *key, const byte *iv, const byte *ciphertext, size_t
     Serial.print("Texto desencriptado: \"");
     Serial.print(decryptedText);
     Serial.println("\"");
-
-}
-
-void setup() {
-    Serial.begin(115200);
-
-    size_t size = sizeof(cipherText);
-
-    // Desencriptar el texto con la clave de 128 bits
-    decryptText(key256, iv, cipherText, size);
 
 }
 
