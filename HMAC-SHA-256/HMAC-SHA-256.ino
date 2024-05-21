@@ -6,7 +6,7 @@
 #define BLOCK_SIZE 64
 
 SHA256 sha256;
-char frase[] = "la criptografía"; // Define la frase como una variable global
+char frase[] = "APVCMSJ2024IOTTG"; // Define la frase como una variable global
 char clave[] = "miClaveSecreta";
 
 void printHash(uint8_t* hash) {
@@ -41,7 +41,6 @@ void hmacData(const char* key, const char* data)
 void setup()
 {
     Serial.begin(115200);
-    Serial.println("Iniciando...");
     hmacData(clave, frase);
 }
 
