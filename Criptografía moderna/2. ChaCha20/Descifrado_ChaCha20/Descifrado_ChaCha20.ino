@@ -15,6 +15,9 @@ byte cipherText[] = {0XD6, 0X22, 0X77, 0XD8, 0XF4, 0X7B, 0X74, 0XC1, 0XDE, 0X1E,
 
 void setup() {
     Serial.begin(115200);
+    while(!Serial){
+    // Espera que el monitor serial se inicie
+    }
     unsigned long start;
     unsigned long elapsed;
 
