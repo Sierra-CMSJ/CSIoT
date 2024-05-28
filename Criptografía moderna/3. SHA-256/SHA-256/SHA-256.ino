@@ -40,6 +40,9 @@ void hashData(const char* data)
 void setup()
 {
     Serial.begin(115200);
+    while(!Serial){
+    // Espera que el monitor serial se inicie
+    }
     hashData(frase); // Llama a hashData en el bucle principal
 }
 
