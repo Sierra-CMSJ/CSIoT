@@ -2,6 +2,9 @@
 tinyECC ecc;
 void setup() {
   Serial.begin(115200);
+  while(!Serial){
+  // Espera que el monitor serial se inicie
+  }
   unsigned long start;
   unsigned long elapsed;
 
