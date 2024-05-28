@@ -23,6 +23,9 @@ void hexStringToByteArray(const char* hexString, byte* byteArray, size_t length)
 
 void setup() {
   Serial.begin(115200);
+  while(!Serial){
+  // Espera que el monitor serial se inicie
+  }
   unsigned long start;
   unsigned long elapsed;
 
