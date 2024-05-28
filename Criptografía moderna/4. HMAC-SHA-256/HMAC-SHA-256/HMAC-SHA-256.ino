@@ -40,7 +40,10 @@ void hmacData(const char* key, const char* data)
 
 void setup()
 {
-    Serial.begin(115200);
+    Serial.begin(115200); 
+    while(!Serial){
+    // Espera que el monitor serial se inicie
+    }
     hmacData(clave, frase);
 }
 
