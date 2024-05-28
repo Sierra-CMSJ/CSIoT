@@ -20,6 +20,9 @@ void generateRandomKey(byte *key, size_t size) {
 }
 
 void setup() {
+  while(!Serial){
+  // Espera que el monitor serial se inicie
+  }
   Serial.begin(115200);
   unsigned long start;
   unsigned long elapsed;
