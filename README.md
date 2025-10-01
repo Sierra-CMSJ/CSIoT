@@ -22,8 +22,8 @@ Cada algoritmo incluye:
 
 ### 🔒 AES (Advanced Encryption Standard)
 - **Ejemplos disponibles:** uso básico, encriptar, desencriptar, medir tiempo, consumo energético, conversión a hexadecimal.  
-- 📄 [Explicación AES](<CSIoT/Librerías Criptografía CSIoT/AES/Explicacion AES.pdf>)  
-- 📂 [Ejemplos AES](<CSIoT/Librerías Criptografía CSIoT/AES/Examples>)
+- 📄 [Explicación AES](./Librer%C3%ADas%20Criptograf%C3%ADa%20CSIoT/AES/Explicacion%20AES.pdf)
+- 📂 [Ejemplos AES](./Librer%C3%ADas%20Criptograf%C3%ADa%20CSIoT/AES/Examples)
 
 ---
 
