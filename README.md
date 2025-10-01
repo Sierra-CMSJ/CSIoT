@@ -29,28 +29,28 @@ Cada algoritmo incluye:
 
 ### ⚡ ChaCha20
 - **Ejemplos disponibles:** uso básico, encriptar, desencriptar, medir tiempo, consumo energético, conversión a hexadecimal.  
-- 📄 [Explicación ChaCha20](./ChaCha20/Explicacion%20ChaCha20.pdf)  
-- 📂 [Ejemplos ChaCha20](./ChaCha20/Examples)  
+- 📄 [Explicación ChaCha20](./Librer%C3%ADas%20Criptograf%C3%ADa%20CSIoT/ChaCha20/Explicacion%20ChaCha20.pdf)  
+- 📂 [Ejemplos ChaCha20](./Librer%C3%ADas%20Criptograf%C3%ADa%20CSIoT/ChaCha20/Examples)  
 
 ---
 
 ### 🧮 ECCTiny (Elliptic Curve Cryptography)
 - **Ejemplos disponibles:** uso básico, encriptar, desencriptar, medir tiempo, consumo energético, conversión a hexadecimal.  
-- 📂 [Ejemplos ECCTiny](./ECCTiny/Examples)  
+- 📂 [Ejemplos ECCTiny](./Librer%C3%ADas%20Criptograf%C3%ADa%20CSIoT/ECCTiny/Examples)  
 
 ---
 
 ### 🔐 RSA
 - **Ejemplos disponibles:** uso básico, encriptar, desencriptar, medir tiempo, consumo energético, conversión a hexadecimal.  
-- 📄 [Explicación RSA](./RSA/Explicacion%20RSA.pdf)  
-- 📂 [Ejemplos RSA](./RSA/Examples)  
+- 📄 [Explicación RSA](./Librer%C3%ADas%20Criptograf%C3%ADa%20CSIoT/RSA/Explicacion%20RSA.pdf)  
+- 📂 [Ejemplos RSA](./Librer%C3%ADas%20Criptograf%C3%ADa%20CSIoT/RSA/Examples)  
 
 ---
 
 ### 📝 SHA-256
 - **Ejemplos disponibles:** uso básico, hash de cadenas, medir tiempo, consumo energético, conversión a hexadecimal.  
-- 📄 [Explicación SHA-256](./SHA-256/Explicacion%20SHA256.pdf)  
-- 📂 [Ejemplos SHA-256](./SHA-256/Examples)  
+- 📄 [Explicación SHA-256](./Librer%C3%ADas%20Criptograf%C3%ADa%20CSIoT/SHA-256/Explicacion%20SHA256.pdf)  
+- 📂 [Ejemplos SHA-256](./Librer%C3%ADas%20Criptograf%C3%ADa%20CSIoT/SHA-256/Examples)  
 
 ---
 
@@ -90,5 +90,5 @@ Este repositorio está pensado como un recurso técnico para proyectos que busqu
 
 ## 🙎‍♂️🙎‍♂️ Autores:
 
-**Cristian Manuel Sierra Jerez**
-**Abad Plata Vera**
+- **Cristian Manuel Sierra Jerez**
+- **Abad Plata Vera**
