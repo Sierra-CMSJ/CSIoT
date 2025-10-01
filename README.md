@@ -36,7 +36,7 @@ Cada algoritmo incluye:
 
 ### 🧮 ECCTiny (Elliptic Curve Cryptography)
 - **Ejemplos disponibles:** uso básico, encriptar, desencriptar, medir tiempo, consumo energético, conversión a hexadecimal.  
-- 📂 [Ejemplos ECCTiny](./Librer%C3%ADas%20Criptograf%C3%ADa%20CSIoT/ECCTiny/Examples)  
+- 📂 [Ejemplos ECCTiny](./Librer%C3%ADas%20Criptograf%C3%ADa%20CSIoT/ECCTiny)  
 
 ---
 
