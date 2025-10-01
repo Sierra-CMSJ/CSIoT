@@ -1,3 +1,53 @@
-:::canmore.create_textdoc
-{"name": "readme_cryptoiot", "type": "code/markdown", "content": "# 🔐 CriptoLibs-IoT\n\nRepositorio de librerías de **criptografía optimizadas para microcontroladores** orientadas a proyectos IoT. Este espacio centraliza las implementaciones, documentación y ejemplos prácticos que permiten evaluar y aplicar algoritmos criptográficos en plataformas embebidas, considerando tanto **rendimiento computacional** como **eficiencia energética**.\n\n---\n\n## 📂 Estructura del repositorio\n\n`\n├── libs/                # Librerías criptográficas implementadas\n│   ├── AES/\n│   ├── ChaCha20/\n│   ├── SHA-256/\n│   ├── RSA/\n│   └── ECC/\n│\n├── docs/                # Documentación técnica detallada\n│   ├── AES_doc.md\n│   ├── ChaCha20_doc.md\n│   ├── SHA256_doc.md\n│   ├── RSA_doc.md\n│   └── ECC_doc.md\n│\n├── examples/            # Ejemplos de uso por algoritmo y microcontrolador\n│   ├── ESP32/\n│   ├── STM32/\n│   ├── RaspberryPiPico/\n│   └── ArduinoUNO/\n│\n└── results/             # Reportes de resultados obtenidos en pruebas\n    ├── rendimiento.md\n    ├── energia.md\n    └── conclusiones.md\n`\n\n---\n\n## 🚀 Objetivo\nEste repositorio tiene como propósito **facilitar la adopción de criptografía en proyectos IoT** mediante:\n- Implementaciones ligeras y adaptadas a diferentes arquitecturas.\n- Documentación clara sobre uso, limitaciones y escenarios recomendados.\n- Ejemplos prácticos que muestran cómo integrar cada librería en aplicaciones reales.\n- Resultados de experimentación que orientan en la selección de algoritmos según **microcontrolador**, **consumo energético** y **carga computacional**.\n\n---\n\n## 📖 Documentación\nCada algoritmo cuenta con su propia documentación que incluye:\n- **Descripción técnica** del algoritmo.\n- **Requerimientos de memoria y procesamiento**.\n- **Escenarios de uso recomendados** (ej. cifrado masivo, hashing, firma digital, intercambio de claves).\n- **Limitaciones identificadas** en entornos de recursos restringidos.\n\n> 📌 La documentación se encuentra en la carpeta [`docs/`](./docs).\n\n---\n\n## 🧩 Ejemplos de uso\nEn la carpeta [`examples/`](./examples) se encuentran programas de referencia que muestran cómo emplear cada librería en distintas plataformas:\n- **ESP32**: ejemplos de cifrado en tiempo real y comunicaciones seguras.\n- **STM32**: pruebas de hashing y cifrado optimizado para bajo consumo.\n- **Raspberry Pi Pico**: cifrado masivo y comparativas de rendimiento.\n- **Arduino UNO**: ejemplos didácticos que ilustran sus limitaciones.\n\n---\n\n## 📊 Resultados obtenidos\nEste repositorio también integra un análisis experimental sobre los algoritmos implementados, incluyendo:\n- **Rendimiento en µs/byte** para cada combinación microcontrolador–algoritmo.\n- **Consumo energético aproximado por byte procesado**.\n- **Conclusiones prácticas** que orientan sobre la viabilidad de uso en aplicaciones IoT reales.\n\n> 📌 Los resultados completos están en la carpeta [`results/`](./results).\n\n---\n\n## 🌐 Aplicaciones\nLos hallazgos y librerías de este repositorio son de especial interés para proyectos en:\n- **Internet de las Cosas (IoT)**\n- **Dispositivos médicos conectados**\n- **Entornos industriales**\n- **Sistemas de control y automatización**\n\nDonde la **eficiencia energética**, la **seguridad de la información** y la **optimización de recursos computacionales** resultan factores determinantes.\n\n---\n\n## 📌 Futuro del proyecto\nEste repositorio crecerá con:\n- Nuevos algoritmos, incluyendo **post-cuánticos**.\n- Integración de pruebas bajo **RTOS** para evaluar concurrencia y planificación.\n- Comparativas extendidas en nuevos microcontroladores.\n\n---\n\n## 🤝 Contribuciones\nSe aceptan contribuciones de la comunidad. Puedes aportar mejoras en:\n- Código de librerías.\n- Documentación.\n- Nuevos ejemplos de uso.\n- Reportes adicionales de pruebas.\n\nPor favor, abre un **pull request** o una **issue** para coordinar cambios.\n\n---\n\n## 📜 Licencia\nEste proyecto se distribuye bajo la licencia MIT. Consulta el archivo [`LICENSE`](./LICENSE) para más información.\n\n---\n\n## 👤 Autor\n**Cristian Manuel Sierra Jerez**  \nProyecto académico y experimental en el marco de investigación sobre **criptografía en microcontroladores**.\n"}
-:::
+# 📚 Librerías de Criptografía CSIoT
+
+Este repositorio reúne un conjunto de **librerías de criptografía implementadas para entornos IoT**, con el objetivo de proporcionar ejemplos prácticos y documentación clara para su uso en proyectos de seguridad.  
+
+Cada algoritmo incluye:  
+- 📂 **`src/`** → Código fuente de la librería.  
+- 📂 **`Examples/`** → Ejemplos prácticos (uso básico, encriptar, desencriptar, medir tiempo, consumo energético, conversión a hexadecimal).  
+- 📄 **Explicación en PDF** → Documento con la descripción teórica y fundamentos del algoritmo.  
+- ⚙️ **`library.properties`** → Archivo de propiedades de la librería.  
+
+---
+
+## 🔑 Algoritmos Incluidos
+
+### 🔒 AES (Advanced Encryption Standard)
+- **Ejemplos disponibles:** uso básico, encriptar, desencriptar, medir tiempo, consumo energético, conversión a hexadecimal.  
+- 📄 [Explicación AES](./AES/Explicacion%20AES.pdf)  
+- 📂 [Ejemplos AES](./AES/Examples)  
+
+---
+
+### ⚡ ChaCha20
+- **Ejemplos disponibles:** uso básico, encriptar, desencriptar, medir tiempo, consumo energético, conversión a hexadecimal.  
+- 📄 [Explicación ChaCha20](./ChaCha20/Explicacion%20ChaCha20.pdf)  
+- 📂 [Ejemplos ChaCha20](./ChaCha20/Examples)  
+
+---
+
+### 🧮 ECCTiny (Elliptic Curve Cryptography)
+- **Ejemplos disponibles:** uso básico, encriptar, desencriptar, medir tiempo, consumo energético, conversión a hexadecimal.  
+- 📂 [Ejemplos ECCTiny](./ECCTiny/Examples)  
+
+---
+
+### 🔐 RSA
+- **Ejemplos disponibles:** uso básico, encriptar, desencriptar, medir tiempo, consumo energético, conversión a hexadecimal.  
+- 📄 [Explicación RSA](./RSA/Explicacion%20RSA.pdf)  
+- 📂 [Ejemplos RSA](./RSA/Examples)  
+
+---
+
+### 📝 SHA-256
+- **Ejemplos disponibles:** uso básico, hash de cadenas, medir tiempo, consumo energético, conversión a hexadecimal.  
+- 📄 [Explicación SHA-256](./SHA-256/Explicacion%20SHA256.pdf)  
+- 📂 [Ejemplos SHA-256](./SHA-256/Examples)  
+
+---
+
+## 🚀 Ejecución de Ejemplos
+
+1. Clona este repositorio:  
+   ```bash
+   git clone https://github.com/Sierra-CMSJ/CSIoT.git
