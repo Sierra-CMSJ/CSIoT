@@ -1,14 +1,14 @@
 # 📚 Librerías de Criptografía CSIoT
 
-Este repositorio reúne un conjunto de **librerías de criptografía implementadas para entornos IoT**, con el objetivo de proporcionar ejemplos prácticos y documentación clara para su uso en proyectos de seguridad.  
+Este repositorio reúne un conjunto de **librerías de criptografía implementadas para entornos IoT**, con el objetivo de proporcionar ejemplos prácticos y documentación clara para su uso en proyectos del internet de las cosas que implementen sistemas embebidos con limitaciones en hardware como lo son la ESP32, STM32, Arduino Uno y Raspberry Pi Pico.  
 
-## 🎯 Objetivo del proyecto:
+## 🎯 Objetivo del repositorio:
 
 Este proyecto busca:
 
 - Proporcionar implementaciones ligeras y eficientes de algoritmos criptográficos para sistemas embebidos de recursos limitados empleados en proyectos IoT.
 - Servir como recurso educativo para estudiantes, investigadores y desarrolladores.
-- Medir el impacto en rendimiento y consumo energético de cada algoritmo en microcontroladores.
+- Medir el impacto en rendimiento (memoria y tiempo de ejecución) y consumo energético de cada algoritmo en microcontroladores.
 
 Cada algoritmo incluye:  
 - 📂 **`src/`** → Código fuente de la librería.  
@@ -34,8 +34,9 @@ Cada algoritmo incluye:
 
 ---
 
-### 🧮 ECCTiny (Elliptic Curve Cryptography)
+### 🧮 ECCTiny (Elliptic Curve Cryptography) Librería propia de Arduino
 - **Ejemplos disponibles:** uso básico, encriptar, desencriptar, medir tiempo, consumo energético, conversión a hexadecimal.  
+- 📋 La documentación sobre esta librería se encuentra en el entorno propio de Arduino, no en nuestro repositorio.
 - 📂 [Ejemplos ECCTiny](./Librer%C3%ADas%20Criptograf%C3%ADa%20CSIoT/ECCTiny)  
 
 ---
@@ -60,13 +61,13 @@ Cada algoritmo incluye:
    ```bash
    git clone https://github.com/Sierra-CMSJ/CSIoT.git
 
-2. Importa la librería en tu entorno (Arduino IDE / PlatformIO)
+2. Importa la librería en tu entorno Arduino IDE
 3. Abre la carpeta del algoritmo que quieras usar.
 4. Explora los códigos dentro de Examples/ para aprender y probar.
 
 ## 📖 Documentación
 
-Cada carpeta incluye un PDF explicativo con la documentación técnica detrás de cada algoritmo y detalles relevantes para comprender su funcionamiento en sistemas embebidos e IoT.
+Cada carpeta incluye un PDF explicativo con la documentación técnica detrás de cada algoritmo y detalles relevantes para comprender su funcionamiento en sistemas embebidos.
 Usa esta documentación para implementar algoritmos de criptografía en tus proyectos IoT e implementa capas de seguridad en cada proyecto.
 
 ## 📊 Resultados Obtenidos
